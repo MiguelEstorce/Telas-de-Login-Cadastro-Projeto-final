@@ -108,12 +108,12 @@
 
       <div class="input-group">
         <label>CNPJ</label>
-        <input type="cnpj" placeholder="Digite seu Cnpj" required>
+       <input type="text" id="cnpj" pattern="[0-9./-]*" inputmode="numeric" placeholder="00.000.000/0001-00" required>
       </div>
 
       <div class="input-group">
         <label>CEP</label>
-        <input type="number" placeholder="Digite seu CEP" required>
+        <input type="text" id="cep" pattern="[0-9-]*" inputmode="numeric" placeholder="00000-000" required>
       </div>
 
       <div class="input-group">
@@ -123,7 +123,7 @@
 
       <div class="input-group">
         <label>Numero</label>
-        <input type="number" placeholder="Digite o Numero do Endereço" required>
+        <input type="text" id="numero" pattern="[0-9]*" inputmode="numeric" required>
       </div>
 
       <div class="input-group">
@@ -141,11 +141,7 @@
       Loja ja Cadastrada? <a href="loginvendedor.html">Clique aqui</a>
     </div>
   </div>
-<script>
-    function validarCNPJ(cnpj){
-        
-    }
 
-</script>
+<script src="validador.js"></script>
 </body>
 </html>
